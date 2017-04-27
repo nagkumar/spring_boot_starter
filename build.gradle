@@ -1,0 +1,96 @@
+buildscript {
+    ext {
+        springBootVersion = "1.5.3.RELEASE"
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("se.transmode.gradle:gradle-docker:1.2")
+    }
+}
+
+apply plugin: "java"
+apply plugin: "groovy"
+apply plugin: "eclipse"
+apply plugin: "idea"
+apply plugin: "spring-boot"
+apply plugin: "application"
+apply plugin: "docker"
+
+jar {
+    baseName = "bookpub"
+    version = "0.0.1-SNAPSHOT"
+}
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+applicationDefaultJvmArgs = [
+        "-Xms128m", "-Xmx128m"//,
+        //"-Dmy.config.value=Gradle"
+]
+
+springBoot {
+    classifier = "exec"
+    embeddedLaunchScript = file("launch.script")
+    embeddedLaunchScriptProperties = ["jvm_options": applicationDefaultJvmArgs.join(" ")]
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("org.springframework.boot:spring-boot-starter-jdbc")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-rest")
+    compile group: 'com.google.guava', name: 'guava', version: '21.0'
+
+    compile project(":db-count-starter")
+
+    compile("commons-configuration:commons-configuration:1.10")
+    compile("commons-codec:commons-codec:1.6")
+    compile("commons-jxpath:commons-jxpath:1.3")
+    compile("commons-collections:commons-collections:3.2.1")
+
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("io.dropwizard.metrics:metrics-core:3.1.0")
+    compile("io.dropwizard.metrics:metrics-jvm:3.1.0")
+    compile("io.dropwizard.metrics:metrics-graphite:3.1.0")
+
+    runtime("com.h2database:h2")
+
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("org.spockframework:spock-core:1.0-groovy-2.4")
+    testCompile("org.spockframework:spock-spring:1.0-groovy-2.4")
+    testRuntime("com.jayway.jsonpath:json-path")
+}
+
+eclipse {
+    classpath {
+        containers.remove("org.eclipse.jdt.launching.JRE_CONTAINER")
+        containers "org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"
+    }
+}
+
+distDocker {
+    exposePort 8180
+    exposePort 8543
+    addFile "${System.properties["user.home"]}/.keystore", "/root/"
+}
+
+bootRun {
+    addResources = false
+}
+
+processResources {
+    filesMatching("**/application.properties") {
+        expand(project.properties)
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "3.5"
+}
