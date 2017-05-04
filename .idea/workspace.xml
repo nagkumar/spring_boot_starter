@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1686b6e2-70c6-4284-b9c7-ac1a73b38d94" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/db-count-starter/src/main/java/org/test/bookpubstarter/dbcount/DbCountAutoConfiguration.java" afterPath="$PROJECT_DIR$/db-count-starter/src/main/java/org/bookpubstarter/dbcount/DbCountAutoConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/db-count-starter/src/main/java/org/test/bookpubstarter/dbcount/DbCountHealthIndicator.java" afterPath="$PROJECT_DIR$/db-count-starter/src/main/java/org/bookpubstarter/dbcount/DbCountHealthIndicator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/db-count-starter/src/main/java/org/test/bookpubstarter/dbcount/DbCountMetrics.java" afterPath="$PROJECT_DIR$/db-count-starter/src/main/java/org/bookpubstarter/dbcount/DbCountMetrics.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/db-count-starter/src/main/java/org/test/bookpubstarter/dbcount/DbCountRunner.java" afterPath="$PROJECT_DIR$/db-count-starter/src/main/java/org/bookpubstarter/dbcount/DbCountRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/db-count-starter/src/main/java/org/test/bookpubstarter/dbcount/EnableDbCounting.java" afterPath="$PROJECT_DIR$/db-count-starter/src/main/java/org/bookpubstarter/dbcount/EnableDbCounting.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/ApacheCommonsConfigurationApplicationRunListener.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/ApacheCommonsConfigurationApplicationRunListener.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/ApacheCommonsConfigurationPropertySource.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/ApacheCommonsConfigurationPropertySource.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/BookPubApplication.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/BookPubApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/MonitoringConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/MonitoringConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/StartupRunner.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/StartupRunner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/WebConfiguration.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/WebConfiguration.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/annotations/UsedForTesting.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/annotations/UsedForTesting.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/controllers/BookController.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/controllers/BookController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/entity/Author.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/entity/Author.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/entity/Book.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/entity/Book.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/entity/Publisher.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/entity/Publisher.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/entity/Reviewer.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/entity/Reviewer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/formatters/BookFormatter.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/formatters/BookFormatter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/repository/AuthorRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/repository/AuthorRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/repository/BookRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/repository/BookRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/repository/PublisherRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/repository/PublisherRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/test/bookpub/repository/ReviewerRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/bookpub/repository/ReviewerRepository.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/groovy/org/test/bookpub/SpockBookRepositorySpecification.groovy" afterPath="$PROJECT_DIR$/src/test/groovy/org/bookpub/SpockBookRepositorySpecification.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/test/bookpub/BookPubApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/org/bookpub/test/BookPubApplicationTests.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/test/bookpub/TestMockBeansConfig.java" afterPath="$PROJECT_DIR$/src/test/java/org/bookpub/test/TestMockBeansConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db-count-starter/src/main/resources/META-INF/spring.factories" afterPath="$PROJECT_DIR$/db-count-starter/src/main/resources/META-INF/spring.factories" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/spring.factories" />
-    </list>
+    <list default="true" id="1686b6e2-70c6-4284-b9c7-ac1a73b38d94" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/db-count-starter/.gradle/" />
@@ -57,7 +27,28 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ApacheCommonsConfigurationApplicationRunListener.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/bookpub/ApacheCommonsConfigurationApplicationRunListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="697">
+              <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApacheCommonsConfigurationPropertySource.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/bookpub/ApacheCommonsConfigurationPropertySource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -1533,10 +1524,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1007000" />
+    <option name="totallyTimeSpent" value="1204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1066" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1558,7 +1550,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553648" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1608,53 +1600,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/bookpub/repository/PublisherRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/bookpub/repository/AuthorRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/bookpub/WebConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="82" lean-forward="true" selection-start-line="43" selection-start-column="82" selection-end-line="43" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="88" column="48" lean-forward="true" selection-start-line="88" selection-start-column="48" selection-end-line="88" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db-count-starter/src/main/main.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db-count-starter/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/commons-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1899,14 +1844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/bookpub/ApacheCommonsConfigurationApplicationRunListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/spring.factories">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1998,6 +1935,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db-count-starter/src/main/java/org/bookpubstarter/dbcount/EnableDbCounting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db-count-starter/src/main/java/org/bookpubstarter/dbcount/DbCountAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db-count-starter/src/main/java/org/bookpubstarter/dbcount/DbCountHealthIndicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db-count-starter/src/main/java/org/bookpubstarter/dbcount/DbCountMetrics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db-count-starter/src/main/java/org/bookpubstarter/dbcount/DbCountRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bookpub/ApacheCommonsConfigurationApplicationRunListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/bookpub/ApacheCommonsConfigurationPropertySource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
         </state>
       </provider>

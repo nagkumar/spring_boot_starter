@@ -1,2 +1,2 @@
 include 'db-count-starter'
-rootProject.name = 'BookPub'
+rootProject.name = 'bookpub'
