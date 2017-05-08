@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BookPub.iml" filepath="$PROJECT_DIR$/.idea/modules/BookPub.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BookPub_main.iml" filepath="$PROJECT_DIR$/.idea/modules/BookPub_main.iml" group="BookPub" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BookPub_test.iml" filepath="$PROJECT_DIR$/.idea/modules/BookPub_test.iml" group="BookPub" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookpub.iml" filepath="$PROJECT_DIR$/.idea/modules/bookpub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookpub_main.iml" filepath="$PROJECT_DIR$/.idea/modules/bookpub_main.iml" group="bookpub" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookpub_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bookpub_test.iml" group="bookpub" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/db-count-starter/db-count-starter.iml" filepath="$PROJECT_DIR$/.idea/modules/db-count-starter/db-count-starter.iml" group="db-count-starter" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/db-count-starter/db-count-starter_main.iml" filepath="$PROJECT_DIR$/.idea/modules/db-count-starter/db-count-starter_main.iml" group="db-count-starter" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/db-count-starter/db-count-starter_test.iml" filepath="$PROJECT_DIR$/.idea/modules/db-count-starter/db-count-starter_test.iml" group="db-count-starter" />
