@@ -78,7 +78,7 @@ eclipse {
 distDocker {
     exposePort 8182
     exposePort 8543
-    addFile "${System.properties["user.home"]}/.keystore", "/root/"
+//    addFile "${System.properties["user.home"]}/.keystore", "/root/"
 }
 
 bootRun {
