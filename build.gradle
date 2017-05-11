@@ -46,7 +46,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-jdbc")
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("org.springframework.boot:spring-boot-starter-data-rest")
-    compile group: 'com.google.guava', name: 'guava', version: '21.0'
+    compile group: 'com.google.guava', name: 'guava', version: '+'
 
     compile project(":db-count-starter")
 
@@ -71,7 +71,7 @@ dependencies {
 distDocker {
     exposePort 8182
     exposePort 8543
-//    addFile "${System.properties["user.home"]}/.keystore", "/root/"
+    //addFile "${System.properties["user.home"]}/.keystore", "/root/"
 }
 
 bootRun {
