@@ -48,7 +48,7 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-rest")
     compile group: 'com.google.guava', name: 'guava', version: '+'
 
-    compile project(":db-count-starter")
+    compile project(":db-metrics")
 
     compile("commons-configuration:commons-configuration:1.10")
     compile("commons-codec:commons-codec")
