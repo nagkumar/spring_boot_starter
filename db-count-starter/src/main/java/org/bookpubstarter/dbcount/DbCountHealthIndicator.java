@@ -8,7 +8,7 @@ public class DbCountHealthIndicator implements HealthIndicator
 {
     private CrudRepository crudRepository;
 
-    public DbCountHealthIndicator(final CrudRepository aCrudRepository)
+    DbCountHealthIndicator(final CrudRepository aCrudRepository)
     {
         crudRepository = aCrudRepository;
     }

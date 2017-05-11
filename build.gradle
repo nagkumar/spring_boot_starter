@@ -21,7 +21,7 @@ apply plugin: "docker"
 
 jar {
     baseName = "bookpub"
-    version = "0.0.1-SNAPSHOT"
+    version = "1.0.0-ALPHA"
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -51,7 +51,7 @@ dependencies {
     compile project(":db-count-starter")
 
     compile("commons-configuration:commons-configuration:1.10")
-    compile("commons-codec:commons-codec:1.6")
+    compile("commons-codec:commons-codec")
     compile("commons-jxpath:commons-jxpath:1.3")
     compile("commons-collections:commons-collections:3.2.1")
 
