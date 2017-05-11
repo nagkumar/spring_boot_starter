@@ -21,7 +21,7 @@ public class DbCountRunner implements CommandLineRunner
     {
         for (Class repositoryInterface : aCrudRepositoryClass.getInterfaces())
         {
-            if (repositoryInterface.getName().startsWith("org.test.bookpub.repository"))
+            if (repositoryInterface.getName().startsWith("org.bookpub.repository"))
             {
                 return repositoryInterface.getSimpleName();
             }
