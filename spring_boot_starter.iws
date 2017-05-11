@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7adee0f-606d-4795-a891-74adb4c929eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountMetrics.java" afterPath="$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountMetrics.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountRunner.java" afterPath="$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring_boot_starter.iws" afterPath="$PROJECT_DIR$/spring_boot_starter.iws" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -102,18 +100,7 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="EnableDbCounting.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/EnableDbCounting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -857,8 +844,8 @@
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/EnableDbCounting.java" />
         <option value="$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountRunner.java" />
-        <option value="$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountMetrics.java" />
         <option value="$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountAutoConfiguration.java" />
+        <option value="$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountMetrics.java" />
       </list>
     </option>
   </component>
@@ -902,102 +889,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spring_boot_starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring_boot_starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring_boot_starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db-metrics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring_boot_starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring_boot_starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db-metrics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring_boot_starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring_boot_starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db-metrics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring_boot_starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring_boot_starter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db-metrics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bps" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metrics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dbcount" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1558,7 +1449,7 @@
       <workItem from="1494500792666" duration="245000" />
       <workItem from="1494501040804" duration="73000" />
       <workItem from="1494501116108" duration="50000" />
-      <workItem from="1494501168211" duration="642000" />
+      <workItem from="1494501168211" duration="776000" />
     </task>
     <task id="LOCAL-00001" summary="major change to db-counter-starter">
       <created>1494501512425</created>
@@ -1574,11 +1465,25 @@
       <option name="project" value="LOCAL" />
       <updated>1494501583917</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="major change to db-counter-starter">
+      <created>1494501818441</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1494501818441</updated>
+    </task>
+    <task id="LOCAL-00004" summary="e">
+      <created>1494501909809</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1494501909809</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1010000" />
+    <option name="totallyTimeSpent" value="1144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1066" extended-state="0" />
@@ -1625,7 +1530,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="major change to db-counter-starter" />
-    <option name="LAST_COMMIT_MESSAGE" value="major change to db-counter-starter" />
+    <MESSAGE value="e" />
+    <option name="LAST_COMMIT_MESSAGE" value="e" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1695,10 +1601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountAutoConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="153">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1711,18 +1617,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountMetrics.java">
+    <entry file="file://$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="612">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountRunner.java">
+    <entry file="file://$PROJECT_DIR$/db-metrics/src/main/java/org/bps/metrics/dbcount/DbCountMetrics.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="425">
+          <caret line="25" column="68" lean-forward="true" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
           <folding />
         </state>
       </provider>
@@ -1731,6 +1637,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_boot_starter.iws">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring_boot_starter.ipr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
