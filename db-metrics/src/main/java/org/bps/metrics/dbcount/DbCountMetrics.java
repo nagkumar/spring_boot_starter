@@ -23,9 +23,9 @@ public class DbCountMetrics implements PublicMetrics, MetricSet
         List<Metric<?>> metrics = new LinkedList<>();
         crudRepositories.forEach(repository ->
         {
-            String name = DbCountRunner.getRepositoryName(repository.getClass());
-            String metricName = "counter.datasource." + name;
-            metrics.add(new Metric<>(metricName, repository.count()));
+            String bName = DbCountRunner.getRepositoryName(repository.getClass());
+            String bMetricName = "counter.datasource." + bName;
+            metrics.add(new Metric<>(bMetricName, repository.count()));
         });
         return metrics;
     }
