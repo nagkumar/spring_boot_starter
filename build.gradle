@@ -68,13 +68,6 @@ dependencies {
     testRuntime("com.jayway.jsonpath:json-path")
 }
 
-eclipse {
-    classpath {
-        containers.remove("org.eclipse.jdt.launching.JRE_CONTAINER")
-        containers "org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"
-    }
-}
-
 distDocker {
     exposePort 8182
     exposePort 8543
