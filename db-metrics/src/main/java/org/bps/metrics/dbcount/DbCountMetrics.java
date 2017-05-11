@@ -12,7 +12,7 @@ public class DbCountMetrics implements PublicMetrics, MetricSet
 {
     private Collection<CrudRepository> crudRepositories;
 
-    public DbCountMetrics(final Collection<CrudRepository> aCrudRepositories)
+    DbCountMetrics(final Collection<CrudRepository> aCrudRepositories)
     {
         crudRepositories = aCrudRepositories;
     }

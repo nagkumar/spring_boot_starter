@@ -12,7 +12,7 @@ public class DbCountRunner implements CommandLineRunner
     private final Log logger = LogFactory.getLog(getClass());
     private Collection<CrudRepository> crudRepositories;
 
-    public DbCountRunner(final Collection<CrudRepository> aCrudRepositories)
+    DbCountRunner(final Collection<CrudRepository> aCrudRepositories)
     {
         crudRepositories = aCrudRepositories;
     }
