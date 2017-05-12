@@ -1,16 +1,16 @@
-package org.bookpub.controllers;
+package org.bookpub.test.controllers;
 
+import org.bookpub.test.entity.Book;
+import org.bookpub.test.repository.PublisherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.bookpub.entity.Book;
-import org.bookpub.entity.Publisher;
-import org.bookpub.entity.Reviewer;
-import org.bookpub.repository.BookRepository;
-import org.bookpub.repository.PublisherRepository;
+import org.bookpub.test.entity.Publisher;
+import org.bookpub.test.entity.Reviewer;
+import org.bookpub.test.repository.BookRepository;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
