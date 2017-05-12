@@ -20,11 +20,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableDbCounting
 public class BookPubApplication
 {
-    public static void main(String[] args)
-    {
-        SpringApplication.run(BookPubApplication.class, args);
-    }
-
     @Bean
     @Profile("logger")
     public StartupRunner scheduleRunner()
@@ -36,5 +31,10 @@ public class BookPubApplication
     public CommandLineRunner configValuePrinter(@Value("${my.config.value:}") String aConfigValue)
     {
         return args -> LogFactory.getLog(getClass()).info("Value of my.config.value property is: " + aConfigValue);
+    }
+
+    public static void main(final String[] aArgs)
+    {
+        SpringApplication.run(BookPubApplication.class, aArgs);
     }
 }
