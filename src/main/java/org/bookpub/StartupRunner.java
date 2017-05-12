@@ -2,14 +2,14 @@ package org.bookpub;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.bookpub.repository.AuthorRepository;
+import org.bookpub.repository.BookRepository;
+import org.bookpub.repository.PublisherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.bookpub.repository.AuthorRepository;
-import org.bookpub.repository.BookRepository;
-import org.bookpub.repository.PublisherRepository;
 
 @Order(Ordered.LOWEST_PRECEDENCE - 15)
 public class StartupRunner implements CommandLineRunner

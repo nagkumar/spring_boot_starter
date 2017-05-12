@@ -4,6 +4,19 @@
     <list default="true" id="1bca2244-16a6-4a6a-aa55-f7dc83458266" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring_boot_starter.ipr" afterPath="$PROJECT_DIR$/spring_boot_starter.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring_boot_starter.iws" afterPath="$PROJECT_DIR$/spring_boot_starter.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../build.gradle" afterPath="$PROJECT_DIR$/../build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/org/bookpub/BookPubApplication.java" afterPath="$PROJECT_DIR$/../src/main/java/org/bookpub/BookPubApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/org/bookpub/StartupRunner.java" afterPath="$PROJECT_DIR$/../src/main/java/org/bookpub/StartupRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/org/bookpub/WebConfiguration.java" afterPath="$PROJECT_DIR$/../src/main/java/org/bookpub/WebConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/org/bookpub/controllers/BookController.java" afterPath="$PROJECT_DIR$/../src/main/java/org/bookpub/controllers/BookController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/org/bookpub/formatters/BookFormatter.java" afterPath="$PROJECT_DIR$/../src/main/java/org/bookpub/formatters/BookFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/org/bookpub/repository/AuthorRepository.java" afterPath="$PROJECT_DIR$/../src/main/java/org/bookpub/repository/AuthorRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/org/bookpub/repository/BookRepository.java" afterPath="$PROJECT_DIR$/../src/main/java/org/bookpub/repository/BookRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/org/bookpub/repository/PublisherRepository.java" afterPath="$PROJECT_DIR$/../src/main/java/org/bookpub/repository/PublisherRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/main/java/org/bookpub/repository/ReviewerRepository.java" afterPath="$PROJECT_DIR$/../src/main/java/org/bookpub/repository/ReviewerRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/test/groovy/org/bookpub/SpockBookRepositorySpecification.groovy" afterPath="$PROJECT_DIR$/../src/test/groovy/org/bookpub/SpockBookRepositorySpecification.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/test/java/org/bookpub/test/BookPubApplicationTests.java" afterPath="$PROJECT_DIR$/../src/test/java/org/bookpub/test/BookPubApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/test/java/org/bookpub/test/TestMockBeansConfig.java" afterPath="$PROJECT_DIR$/../src/test/java/org/bookpub/test/TestMockBeansConfig.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../db-metrics/.gradle/" />
@@ -32,6 +45,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Distdoc</find>
+      <find>DOCKER</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -438,7 +457,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="7470069641779" />
+        <entry key="$PROJECT_DIR$/.." value="7470167233728" />
+        <entry key="$PROJECT_DIR$/../build.gradle" value="400860662" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -763,6 +783,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/spring_boot_starter.ipr" />
+        <option value="$PROJECT_DIR$/../build.gradle" />
       </list>
     </option>
   </component>
@@ -794,13 +815,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring_boot_starter" />
+              <option name="myItemId" value="bookpub" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -810,7 +832,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring_boot_starter" />
+              <option name="myItemId" value="bookpub" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -828,7 +850,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1267,12 +1288,14 @@
       <workItem from="1494596890597" duration="43000" />
       <workItem from="1494596935253" duration="306000" />
       <workItem from="1494597243507" duration="122000" />
-      <workItem from="1494597371069" duration="58000" />
+      <workItem from="1494597371069" duration="138000" />
+      <workItem from="1494597519170" duration="12000" />
+      <workItem from="1494597590898" duration="326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="842000" />
+    <option name="totallyTimeSpent" value="1260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1066" extended-state="0" />
@@ -1297,8 +1320,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26609442" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27145922" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1307,7 +1331,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1337,7 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,7 +1367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,7 +1374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1361,7 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,7 +1388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1377,6 +1395,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="99" lean-forward="true" selection-start-line="1" selection-start-column="99" selection-end-line="1" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/wrapper/dists/gradle-2.9-all/1aw2ic01pldw5fkvoq6t1fsz4/gradle-2.9/src/core/org/gradle/api/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="963" column="39" lean-forward="false" selection-start-line="963" selection-start-column="39" selection-end-line="963" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding />
         </state>
       </provider>

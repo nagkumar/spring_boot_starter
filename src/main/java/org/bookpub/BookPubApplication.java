@@ -1,6 +1,8 @@
 package org.bookpub;
 
 import org.apache.commons.logging.LogFactory;
+import org.bookpub.annotations.UsedForTesting;
+import org.bps.metrics.dbcount.EnableDbCounting;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -10,8 +12,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.bookpub.annotations.UsedForTesting;
-import org.bps.metrics.dbcount.EnableDbCounting;
 
 @Configuration
 @EnableAutoConfiguration

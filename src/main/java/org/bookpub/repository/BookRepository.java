@@ -1,7 +1,7 @@
 package org.bookpub.repository;
 
-import org.springframework.data.repository.CrudRepository;
 import org.bookpub.entity.Book;
+import org.springframework.data.repository.CrudRepository;
 
 public interface BookRepository extends CrudRepository<Book, Long>
 {

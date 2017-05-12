@@ -1,6 +1,8 @@
 package org.bookpub;
 
 import org.apache.catalina.connector.Connector;
+import org.bookpub.formatters.BookFormatter;
+import org.bookpub.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
@@ -15,8 +17,6 @@ import org.springframework.format.FormatterRegistry;
 import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.bookpub.formatters.BookFormatter;
-import org.bookpub.repository.BookRepository;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;

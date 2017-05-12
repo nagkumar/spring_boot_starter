@@ -40,6 +40,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/bookpub_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bookpub_test.iml" group="bookpub" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/db-metrics/db-metrics.iml" filepath="$PROJECT_DIR$/.idea/modules/db-metrics/db-metrics.iml" group="db-metrics" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/db-metrics/db-metrics_main.iml" filepath="$PROJECT_DIR$/.idea/modules/db-metrics/db-metrics_main.iml" group="db-metrics" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/db-metrics/db-metrics_test.iml" filepath="$PROJECT_DIR$/.idea/modules/db-metrics/db-metrics_test.iml" group="db-metrics" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

@@ -1,16 +1,16 @@
 package org.bookpub.controllers;
 
+import org.bookpub.entity.Book;
+import org.bookpub.entity.Publisher;
+import org.bookpub.entity.Reviewer;
+import org.bookpub.repository.BookRepository;
+import org.bookpub.repository.PublisherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.bookpub.entity.Book;
-import org.bookpub.entity.Publisher;
-import org.bookpub.entity.Reviewer;
-import org.bookpub.repository.BookRepository;
-import org.bookpub.repository.PublisherRepository;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
@@ -58,7 +58,7 @@ public class BookController
     public List<Book> getBooksByPublisher(@PathVariable("id") Long id)
     {
         Publisher publisher = publisherRepository.findOne(id);
-        Assert.notNull(publisher,"The publisher must not be null");
+        Assert.notNull(publisher, "The publisher must not be null");
         return publisher.getBooks();
     }
 }

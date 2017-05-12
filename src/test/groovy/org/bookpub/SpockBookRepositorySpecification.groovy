@@ -1,5 +1,10 @@
 package org.bookpub
 
+import org.bookpub.entity.Author
+import org.bookpub.entity.Book
+import org.bookpub.entity.Publisher
+import org.bookpub.repository.BookRepository
+import org.bookpub.repository.PublisherRepository
 import org.bookpub.test.TestMockBeansConfig
 import org.hamcrest.CoreMatchers
 import org.mockito.Mockito
@@ -15,11 +20,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers
 import org.springframework.test.web.servlet.setup.MockMvcBuilders
 import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.context.ConfigurableWebApplicationContext
-import org.bookpub.entity.Author
-import org.bookpub.entity.Book
-import org.bookpub.entity.Publisher
-import org.bookpub.repository.BookRepository
-import org.bookpub.repository.PublisherRepository
 import spock.lang.Shared
 import spock.lang.Specification
 

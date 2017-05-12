@@ -1,10 +1,10 @@
 package org.bookpub.test;
 
+import org.bookpub.annotations.UsedForTesting;
+import org.bookpub.repository.PublisherRepository;
 import org.mockito.Mockito;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Primary;
-import org.bookpub.annotations.UsedForTesting;
-import org.bookpub.repository.PublisherRepository;
 
 @UsedForTesting
 public class TestMockBeansConfig

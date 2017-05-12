@@ -1,5 +1,7 @@
 package org.bookpub.test;
 
+import org.bookpub.entity.Book;
+import org.bookpub.repository.BookRepository;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Before;
@@ -18,8 +20,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.context.WebApplicationContext;
-import org.bookpub.entity.Book;
-import org.bookpub.repository.BookRepository;
 
 import javax.sql.DataSource;
 
