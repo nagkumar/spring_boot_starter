@@ -30,3 +30,5 @@ overridedb.*
 *.jar
 .DS_Store
 .factorypath
+.idea/spring_boot_starter.iml
+src/test/groovy/org/test/

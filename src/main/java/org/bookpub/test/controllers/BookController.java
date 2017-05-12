@@ -19,12 +19,16 @@ import java.util.List;
 @RequestMapping("/books")
 public class BookController
 {
+    private final BookRepository bookRepository;
+
+    private final PublisherRepository publisherRepository;
 
     @Autowired
-    private BookRepository bookRepository;
-
-    @Autowired
-    private PublisherRepository publisherRepository;
+    public BookController(BookRepository bookRepository, PublisherRepository publisherRepository)
+    {
+        this.bookRepository = bookRepository;
+        this.publisherRepository = publisherRepository;
+    }
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Iterable<Book> getAllBooks()
@@ -54,8 +58,7 @@ public class BookController
     public List<Book> getBooksByPublisher(@PathVariable("id") Long id)
     {
         Publisher publisher = publisherRepository.findOne(id);
-        Assert.notNull(publisher);
+        Assert.notNull(publisher,"The publisher must not be null");
         return publisher.getBooks();
     }
-
 }
