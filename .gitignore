@@ -34,3 +34,6 @@ src/test/groovy/org/test/
 db-metrics/src/test/
 src/.idea/
 src/main/groovy/
+.idea/.name
+.idea/inspectionProfiles/
+.idea/libraries/
