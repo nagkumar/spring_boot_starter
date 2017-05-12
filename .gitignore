@@ -15,7 +15,6 @@ bin
 build
 lib/
 target
-.factorypath
 .springBeans
 interpolated*.xml
 dependency-reduced-pom.xml
@@ -29,6 +28,9 @@ activemq-data
 overridedb.*
 *.jar
 .DS_Store
-.factorypath
+
 .idea/spring_boot_starter.iml
 src/test/groovy/org/test/
+db-metrics/src/test/
+src/.idea/
+src/main/groovy/
