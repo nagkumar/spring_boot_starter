@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface BookRepository extends CrudRepository<Book, Long>
 {
-    Book findBookByIsbn(String isbn);
+    Book findBookByIsbn(final String aISBN);
 }

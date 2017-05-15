@@ -28,12 +28,16 @@ import javax.sql.DataSource;
 public class BookPubApplicationTests
 {
     private static boolean loadDataFixtures = true;
+
     @Autowired
     private WebApplicationContext context;
+
     @Autowired
     private BookRepository bookRepository;
+
     @Autowired
     private DataSource dataSource;
+
     @Value("${local.server.port}")
     private int port;
     private MockMvc mockMvc;
