@@ -15,8 +15,13 @@ import java.util.Collection;
 @Configuration
 public class DbCountAutoConfiguration
 {
+    private final HealthAggregator healthAggregator;
+
     @Autowired
-    private HealthAggregator healthAggregator;
+    public DbCountAutoConfiguration(final HealthAggregator aHealthAggregator)
+    {
+        healthAggregator = aHealthAggregator;
+    }
 
     @Bean
     @ConditionalOnMissingBean
@@ -30,8 +35,8 @@ public class DbCountAutoConfiguration
     {
         CompositeHealthIndicator compositeHealthIndicator = new CompositeHealthIndicator(healthAggregator);
         aCrudRepositories.forEach(r ->
-                compositeHealthIndicator.addHealthIndicator(DbCountRunner.getRepositoryName(r.getClass()),
-                        new DbCountHealthIndicator(r))
+                compositeHealthIndicator.addHealthIndicator(
+                        DbCountRunner.getRepositoryName(r.getClass()), new DbCountHealthIndicator(r))
         );
         return compositeHealthIndicator;
     }
