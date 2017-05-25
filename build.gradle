@@ -84,7 +84,7 @@ distDocker {
     exposePort 8182
     exposePort 8543
     maintainer 'Raja Nagendra Kumar, C.T.O, TejaSoft, inquiry@tejasoft.com'
-    push true
+    //push true
     //addFile "${System.properties["user.home"]}/.keystore", "/root/"
 }
 
