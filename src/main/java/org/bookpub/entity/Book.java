@@ -8,8 +8,8 @@ import java.util.List;
 
 @Entity
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,
-        property = "id",
-        scope = Book.class)
+	property = "id",
+	scope = Book.class)
 public class Book
 {
     @Id
@@ -33,79 +33,79 @@ public class Book
 
     public Book(final String aISBN, final String aTitle, final Author aAuthor, final Publisher aPublisher)
     {
-        isbn = aISBN;
-        title = aTitle;
-        author = aAuthor;
-        publisher = aPublisher;
+	isbn = aISBN;
+	title = aTitle;
+	author = aAuthor;
+	publisher = aPublisher;
     }
 
     public Long getId()
     {
-        return id;
+	return id;
     }
 
     public void setId(final Long aId)
     {
-        id = aId;
+	id = aId;
     }
 
     public String getIsbn()
     {
-        return isbn;
+	return isbn;
     }
 
     public void setIsbn(final String aISBN)
     {
-        isbn = aISBN;
+	isbn = aISBN;
     }
 
     public String getTitle()
     {
-        return title;
+	return title;
     }
 
     public void setTitle(final String aTitle)
     {
-        title = aTitle;
+	title = aTitle;
     }
 
     public String getDescription()
     {
-        return description;
+	return description;
     }
 
     public void setDescription(final String aDescription)
     {
-        description = aDescription;
+	description = aDescription;
     }
 
     public Author getAuthor()
     {
-        return author;
+	return author;
     }
 
     public void setAuthor(final Author aAuthor)
     {
-        author = aAuthor;
+	author = aAuthor;
     }
 
     public Publisher getPublisher()
     {
-        return publisher;
+	return publisher;
     }
 
     public void setPublisher(final Publisher aPublisher)
     {
-        publisher = aPublisher;
+	publisher = aPublisher;
     }
 
     public List<Reviewer> getReviewers()
     {
-        return reviewers;
+	return reviewers;
     }
 
     public void setReviewers(final List<Reviewer> aReviewers)
     {
-        reviewers = aReviewers;
+	reviewers = aReviewers;
     }
 }

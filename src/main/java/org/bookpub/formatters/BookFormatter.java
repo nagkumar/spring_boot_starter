@@ -13,19 +13,19 @@ public class BookFormatter implements Formatter<Book>
 
     public BookFormatter(final BookRepository aBookRepository)
     {
-        bookRepository = aBookRepository;
+	bookRepository = aBookRepository;
     }
 
     @Override
     public Book parse(String bookIdentifier, Locale locale) throws ParseException
     {
-        Book book = bookRepository.findBookByIsbn(bookIdentifier);
-        return book != null ? book : bookRepository.findOne(Long.valueOf(bookIdentifier));
+	Book book = bookRepository.findBookByIsbn(bookIdentifier);
+	return book != null ? book : bookRepository.findOne(Long.valueOf(bookIdentifier));
     }
 
     @Override
     public String print(Book book, Locale locale)
     {
-        return book.getIsbn();
+	return book.getIsbn();
     }
 }

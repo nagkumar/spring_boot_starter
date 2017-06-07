@@ -1,11 +1,12 @@
-package org.bookpub
+package org.bookpub.test.spec
 
+import org.bookpub.BookPubApplication
 import org.bookpub.entity.Author
 import org.bookpub.entity.Book
 import org.bookpub.entity.Publisher
 import org.bookpub.repository.BookRepository
 import org.bookpub.repository.PublisherRepository
-import org.bookpub.test.TestMockBeansConfig
+import org.bookpub.test.unit.TestMockBeansConfig
 import org.hamcrest.CoreMatchers
 import org.mockito.Mockito
 import org.springframework.beans.factory.annotation.Autowired
@@ -79,7 +80,7 @@ class SpockBookRepositorySpecification extends Specification
         setup:
         def existingBook = bookRepository.findBookByIsbn("972-1-78528-415-1")
         def newBook = new Book("978-1-78528-415-1", "Some Future Book",
-                existingBook.getAuthor(), existingBook.getPublisher())
+                               existingBook.getAuthor(), existingBook.getPublisher())
 
         expect:
         bookRepository.count() == 2
@@ -101,7 +102,7 @@ class SpockBookRepositorySpecification extends Specification
         Publisher publisher = new Publisher("Strange Books")
         publisher.setId(999)
         Book book = new Book("978-1-98765-432-1", "Mystery Book",
-                new Author("John", "Doe"), publisher)
+                             new Author("John", "Doe"), publisher)
         publisher.setBooks([book])
         Mockito.when(publisherRepository.count()).thenReturn(1L)
         Mockito.when(publisherRepository.findOne(1L)).thenReturn(publisher)

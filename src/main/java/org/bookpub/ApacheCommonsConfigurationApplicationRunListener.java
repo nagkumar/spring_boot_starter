@@ -10,7 +10,7 @@ import org.springframework.core.env.ConfigurableEnvironment;
 public class ApacheCommonsConfigurationApplicationRunListener implements SpringApplicationRunListener
 {
     public ApacheCommonsConfigurationApplicationRunListener(final SpringApplication aSpringApplication,
-                                                            final String[] aArgs)
+							    final String[] aArgs)
     {
     }
 
@@ -23,15 +23,15 @@ public class ApacheCommonsConfigurationApplicationRunListener implements SpringA
     @Override
     public void environmentPrepared(final ConfigurableEnvironment aConfigurableEnvironment)
     {
-        try
-        {
-            ApacheCommonsConfigurationPropertySource.addToEnvironment(aConfigurableEnvironment,
-                    new XMLConfiguration("commons-config.xml"));
-        }
-        catch (final ConfigurationException aConfigurationException)
-        {
-            throw new RuntimeException("Unable to load commons-config.xml", aConfigurationException);
-        }
+	try
+	{
+	    ApacheCommonsConfigurationPropertySource.addToEnvironment(aConfigurableEnvironment,
+								      new XMLConfiguration("commons-config.xml"));
+	}
+	catch (final ConfigurationException aConfigurationException)
+	{
+	    throw new RuntimeException("Unable to load commons-config.xml", aConfigurationException);
+	}
     }
 
     @Override

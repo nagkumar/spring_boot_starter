@@ -1,4 +1,4 @@
-package org.bookpub.test;
+package org.bookpub.test.unit;
 
 import org.bookpub.annotations.UsedForTesting;
 import org.bookpub.repository.PublisherRepository;
@@ -13,6 +13,6 @@ public class TestMockBeansConfig
     @Primary
     public PublisherRepository createMockPublisherRepository()
     {
-        return Mockito.mock(PublisherRepository.class);
+	return Mockito.mock(PublisherRepository.class);
     }
 }

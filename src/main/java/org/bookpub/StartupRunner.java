@@ -26,19 +26,19 @@ public class StartupRunner implements CommandLineRunner
 
     @Autowired
     public StartupRunner(final BookRepository aBookRepository,
-                         final AuthorRepository aAuthorRepository,
-                         final PublisherRepository aPublisherRepository)
+			 final AuthorRepository aAuthorRepository,
+			 final PublisherRepository aPublisherRepository)
     {
-        bookRepository = aBookRepository;
-        authorRepository = aAuthorRepository;
-        publisherRepository = aPublisherRepository;
+	bookRepository = aBookRepository;
+	authorRepository = aAuthorRepository;
+	publisherRepository = aPublisherRepository;
     }
 
     @Override
     public void run(final String... aArgs) throws Exception
     {
-        logger.info("Welcome to Book Catalogue System!");
-        /*Author author = new Author("Alex", "Antonov");
+	logger.info("Welcome to Book Catalogue System!");
+	/*Author author = new Author("Alex", "Antonov");
         author = authorRepository.save(author);
         Publisher publisher = new Publisher("Packt");
         publisher = publisherRepository.save(publisher);
@@ -50,6 +50,6 @@ public class StartupRunner implements CommandLineRunner
     @Scheduled(initialDelayString = "${book.counter.delay}", fixedRateString = "${book.counter.rate}")
     public void run()
     {
-        logger.info("Number of books: " + bookRepository.count());
+	logger.info("Number of books: " + bookRepository.count());
     }
 }

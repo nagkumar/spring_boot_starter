@@ -1,4 +1,4 @@
-package org.bookpub.test;
+package org.bookpub.test.unit;
 
 import org.bookpub.entity.Book;
 import org.bookpub.repository.BookRepository;
@@ -7,9 +7,12 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.jdbc.datasource.init.DatabasePopulatorUtils;
 import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
@@ -48,42 +51,42 @@ public class BookPubApplicationTests
     @Before
     public void setupMockMvc()
     {
-        mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
+	mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
     }
 
     @Before
     public void loadDataFixtures()
     {
-        if (loadDataFixtures)
-        {
-            ResourceDatabasePopulator populator = new ResourceDatabasePopulator(
-                    context.getResource("classpath:/test-data.sql"));
-            DatabasePopulatorUtils.execute(populator, dataSource);
-            loadDataFixtures = false;
-        }
+	if (loadDataFixtures)
+	{
+	    ResourceDatabasePopulator populator = new ResourceDatabasePopulator(
+		    context.getResource("classpath:/test-data.sql"));
+	    DatabasePopulatorUtils.execute(populator, dataSource);
+	    loadDataFixtures = false;
+	}
     }
 
     @Test
     public void contextLoads()
     {
-        Assert.assertEquals(2, bookRepository.count());
+	Assert.assertEquals(2, bookRepository.count());
     }
 
     @Test
     public void webappBookIsbnApi()
     {
-        Book book = restTemplate.getForObject("http://localhost:" + port + "/books/972-1-78528-415-1", Book.class);
-        Assert.assertNotNull(book);
-        Assert.assertEquals("Packt", book.getPublisher().getName());
+	Book book = restTemplate.getForObject("http://localhost:" + port + "/books/972-1-78528-415-1", Book.class);
+	Assert.assertNotNull(book);
+	Assert.assertEquals("Packt", book.getPublisher().getName());
     }
 
     @Test
     public void webappPublisherApi() throws Exception
     {
-        mockMvc.perform(MockMvcRequestBuilders.get("/publishers/1")).
-                andExpect(MockMvcResultMatchers.status().isOk()).
-                andExpect(MockMvcResultMatchers.content().contentType(MediaType.parseMediaType("application/hal+json"))).
-                andExpect(MockMvcResultMatchers.content().string(Matchers.containsString("Packt"))).
-                andExpect(MockMvcResultMatchers.jsonPath("$.name").value("Packt"));
+	mockMvc.perform(MockMvcRequestBuilders.get("/publishers/1")).
+		andExpect(MockMvcResultMatchers.status().isOk()).
+		andExpect(MockMvcResultMatchers.content().contentType(MediaType.parseMediaType("application/hal+json;charset=UTF-8"))).
+		andExpect(MockMvcResultMatchers.content().string(Matchers.containsString("Packt"))).
+		andExpect(MockMvcResultMatchers.jsonPath("$.name").value("Packt"));
     }
 }

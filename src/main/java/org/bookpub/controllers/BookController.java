@@ -26,39 +26,39 @@ public class BookController
     @Autowired
     public BookController(BookRepository bookRepository, PublisherRepository publisherRepository)
     {
-        this.bookRepository = bookRepository;
-        this.publisherRepository = publisherRepository;
+	this.bookRepository = bookRepository;
+	this.publisherRepository = publisherRepository;
     }
 
     @RequestMapping(value = "", method = RequestMethod.GET)
     public Iterable<Book> getAllBooks()
     {
-        return bookRepository.findAll();
+	return bookRepository.findAll();
     }
 
     @RequestMapping(value = "/{isbn}", method = RequestMethod.GET)
     public Book getBook(@PathVariable String isbn)
     {
-        return bookRepository.findBookByIsbn(isbn);
+	return bookRepository.findBookByIsbn(isbn);
     }
 
     @RequestMapping(value = "/{isbn}/reviewers", method = RequestMethod.GET)
     public List<Reviewer> getReviewers(@PathVariable("isbn") Book book)
     {
-        return book.getReviewers();
+	return book.getReviewers();
     }
 
     @RequestMapping(value = "/session", method = RequestMethod.GET)
     public String getSessionId(HttpServletRequest request)
     {
-        return request.getSession().getId();
+	return request.getSession().getId();
     }
 
     @RequestMapping(value = "/publisher/{id}", method = RequestMethod.GET)
     public List<Book> getBooksByPublisher(@PathVariable("id") Long id)
     {
-        Publisher publisher = publisherRepository.findOne(id);
-        Assert.notNull(publisher, "The publisher must not be null");
-        return publisher.getBooks();
+	Publisher publisher = publisherRepository.findOne(id);
+	Assert.notNull(publisher, "The publisher must not be null");
+	return publisher.getBooks();
     }
 }

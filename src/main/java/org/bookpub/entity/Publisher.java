@@ -11,7 +11,7 @@ import java.util.List;
 
 @Entity
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id",
-        scope = Publisher.class)
+	scope = Publisher.class)
 public class Publisher
 {
     @Id
@@ -28,36 +28,36 @@ public class Publisher
 
     public Publisher(final String aName)
     {
-        name = aName;
+	name = aName;
     }
 
     public Long getId()
     {
-        return id;
+	return id;
     }
 
     public void setId(final Long aId)
     {
-        id = aId;
+	id = aId;
     }
 
     public String getName()
     {
-        return name;
+	return name;
     }
 
     public void setName(final String aName)
     {
-        name = aName;
+	name = aName;
     }
 
     public List<Book> getBooks()
     {
-        return books;
+	return books;
     }
 
     public void setBooks(final List<Book> aBooks)
     {
-        books = aBooks;
+	books = aBooks;
     }
 }

@@ -19,37 +19,37 @@ public class Reviewer
 
     public Reviewer(final String aFirstName, final String aLastName)
     {
-        firstName = aFirstName;
-        lastName = aLastName;
+	firstName = aFirstName;
+	lastName = aLastName;
     }
 
     public Long getId()
     {
-        return id;
+	return id;
     }
 
     public void setId(final Long aId)
     {
-        id = aId;
+	id = aId;
     }
 
     public String getFirstName()
     {
-        return firstName;
+	return firstName;
     }
 
     public void setFirstName(final String aFirstName)
     {
-        firstName = aFirstName;
+	firstName = aFirstName;
     }
 
     public String getLastName()
     {
-        return lastName;
+	return lastName;
     }
 
     public void setLastName(final String aLastName)
     {
-        lastName = aLastName;
+	lastName = aLastName;
     }
 }

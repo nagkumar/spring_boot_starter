@@ -17,29 +17,29 @@ public class MonitoringConfiguration
 {
     @Bean
     public Graphite graphite(@Value("${graphite.host}") String graphiteHost,
-                             @Value("${graphite.port}") int graphitePort)
+			     @Value("${graphite.port}") int graphitePort)
     {
-        return new Graphite(new InetSocketAddress(graphiteHost, graphitePort));
+	return new Graphite(new InetSocketAddress(graphiteHost, graphitePort));
     }
 
     @Bean
     public GraphiteReporter graphiteReporter(Graphite graphite, MetricRegistry registry)
     {
-        GraphiteReporter reporter = GraphiteReporter.forRegistry(registry)
-                .prefixedWith("bookpub.app")
-                .convertRatesTo(TimeUnit.SECONDS)
-                .convertDurationsTo(TimeUnit.MILLISECONDS)
-                .filter(MetricFilter.ALL)
-                .build(graphite);
-        reporter.start(1, TimeUnit.MILLISECONDS);
-        return reporter;
+	GraphiteReporter reporter = GraphiteReporter.forRegistry(registry)
+		.prefixedWith("bookpub.app")
+		.convertRatesTo(TimeUnit.SECONDS)
+		.convertDurationsTo(TimeUnit.MILLISECONDS)
+		.filter(MetricFilter.ALL)
+		.build(graphite);
+	reporter.start(1, TimeUnit.MILLISECONDS);
+	return reporter;
     }
 
     @Bean
     public ThreadStatesGaugeSet threadStatesGaugeSet(MetricRegistry registry)
     {
-        ThreadStatesGaugeSet threadStatesGaugeSet = new ThreadStatesGaugeSet();
-        registry.register("threads", threadStatesGaugeSet);
-        return threadStatesGaugeSet;
+	ThreadStatesGaugeSet threadStatesGaugeSet = new ThreadStatesGaugeSet();
+	registry.register("threads", threadStatesGaugeSet);
+	return threadStatesGaugeSet;
     }
 }

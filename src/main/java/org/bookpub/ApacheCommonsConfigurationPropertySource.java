@@ -17,26 +17,26 @@ public class ApacheCommonsConfigurationPropertySource extends EnumerableProperty
 
     private ApacheCommonsConfigurationPropertySource(String name, XMLConfiguration source)
     {
-        super(name, source);
+	super(name, source);
     }
 
     static void addToEnvironment(ConfigurableEnvironment environment, XMLConfiguration xmlConfiguration)
     {
-        environment.getPropertySources().addAfter(StandardEnvironment.SYSTEM_ENVIRONMENT_PROPERTY_SOURCE_NAME,
-                new ApacheCommonsConfigurationPropertySource(COMMONS_CONFIG_PROPERTY_SOURCE_NAME, xmlConfiguration));
-        logger.trace("ApacheCommonsConfigurationPropertySource add to environment");
+	environment.getPropertySources().addAfter(StandardEnvironment.SYSTEM_ENVIRONMENT_PROPERTY_SOURCE_NAME,
+						  new ApacheCommonsConfigurationPropertySource(COMMONS_CONFIG_PROPERTY_SOURCE_NAME, xmlConfiguration));
+	logger.trace("ApacheCommonsConfigurationPropertySource add to environment");
     }
 
     @Override
     public String[] getPropertyNames()
     {
-        ArrayList<String> keys = Lists.newArrayList(source.getKeys());
-        return keys.toArray(new String[keys.size()]);
+	ArrayList<String> keys = Lists.newArrayList(source.getKeys());
+	return keys.toArray(new String[keys.size()]);
     }
 
     @Override
     public Object getProperty(final String aName)
     {
-        return source.getString(aName);
+	return source.getString(aName);
     }
 }
