@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit;
 
 @Configuration
 @PropertySource("classpath:/tomcat.https.properties")
-@EnableConfigurationProperties(WebConfiguration.TomcatSslConnectorProperties.class)
+@EnableConfigurationProperties(WebConfiguration.TomcatSSLConnectorProperties.class)
 public class WebConfiguration extends WebMvcConfigurerAdapter
 {
     private final BookRepository bookRepository;
@@ -33,7 +33,7 @@ public class WebConfiguration extends WebMvcConfigurerAdapter
     @Autowired
     public WebConfiguration(final BookRepository aBookRepository)
     {
-        bookRepository = aBookRepository;
+	bookRepository = aBookRepository;
     }
 
     @Override
@@ -74,27 +74,27 @@ public class WebConfiguration extends WebMvcConfigurerAdapter
     }
 
     @Bean
-    public EmbeddedServletContainerFactory servletContainerFactory(final TomcatSslConnectorProperties aTomcatSslConnectorProperties)
+    public EmbeddedServletContainerFactory servletContainerFactory(final TomcatSSLConnectorProperties aTomcatSSLConnectorProperties)
     {
 	TomcatEmbeddedServletContainerFactory tomcat = new TomcatEmbeddedServletContainerFactory();
-	tomcat.addAdditionalTomcatConnectors(createSslConnector(aTomcatSslConnectorProperties));
+	tomcat.addAdditionalTomcatConnectors(createSslConnector(aTomcatSSLConnectorProperties));
 	return tomcat;
     }
 
-    private Connector createSslConnector(final TomcatSslConnectorProperties aTomcatSslConnectorProperties)
+    private Connector createSslConnector(final TomcatSSLConnectorProperties aTomcatSSLConnectorProperties)
     {
 	Connector connector = new Connector();
-	aTomcatSslConnectorProperties.configureConnector(connector);
+	aTomcatSSLConnectorProperties.configureConnector(connector);
 	return connector;
     }
 
     @ConfigurationProperties(prefix = "custom.tomcat.https")
-    public static class TomcatSslConnectorProperties
+    public static class TomcatSSLConnectorProperties
     {
-	private Integer port;
 	private Boolean ssl = true;
 	private Boolean secure = true;
 	private String scheme = "https";
+	private Integer port;
 	private File keystore;
 	private String keystorePassword;
 
@@ -160,22 +160,22 @@ public class WebConfiguration extends WebMvcConfigurerAdapter
 
 	void configureConnector(final Connector aConnector)
 	{
-            if (port != null)
-            {
-                aConnector.setPort(port);
-            }
-            if (secure != null)
-            {
-                aConnector.setSecure(secure);
-            }
-            if (scheme != null)
-            {
-                aConnector.setScheme(scheme);
-            }
-            if (ssl != null)
-            {
-                aConnector.setProperty("SSLEnable", ssl.toString());
-            }
+	    if (port != null)
+	    {
+		aConnector.setPort(port);
+	    }
+	    if (secure != null)
+	    {
+		aConnector.setSecure(secure);
+	    }
+	    if (scheme != null)
+	    {
+		aConnector.setScheme(scheme);
+	    }
+	    if (ssl != null)
+	    {
+		aConnector.setProperty("SSLEnable", ssl.toString());
+	    }
 	    if (keystore != null && keystore.exists())
 	    {
 		aConnector.setProperty("keystoreFile", keystore.getAbsolutePath());
