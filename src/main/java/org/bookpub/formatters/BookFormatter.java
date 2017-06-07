@@ -24,8 +24,8 @@ public class BookFormatter implements Formatter<Book>
     }
 
     @Override
-    public String print(Book book, Locale locale)
+    public String print(final Book aBook, final Locale aLocale)
     {
-	return book.getIsbn();
+	return aBook.getIsbn();
     }
 }
