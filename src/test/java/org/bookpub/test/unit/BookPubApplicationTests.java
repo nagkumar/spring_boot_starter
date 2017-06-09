@@ -9,6 +9,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -39,6 +40,7 @@ public class BookPubApplicationTests
     private BookRepository bookRepository;
 
     @Autowired
+    @Qualifier("dataSource")
     private DataSource dataSource;
 
     @Value("${local.server.port}")
