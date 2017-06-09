@@ -177,6 +177,9 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/../../.." />
   </component>
+  <component name="SqlDialectMappings">
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
   </component>
@@ -366,40 +369,49 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dom4j/dom4j/1.6.1/a8e7149359255f43e0e5e3b1837948f9ed5861fb/dom4j-1.6.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: info.cukes:cucumber-core:1.2.4">
+    <library name="Gradle: info.cukes:cucumber-core:1.2.5">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-core/1.2.4/72790b1da44d8d3d2764c6aef29865ee228bbeb1/cucumber-core-1.2.4.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-core/1.2.5/7255a9d8e0c3b0f9e3cd80503c91c2b088b3d9b5/cucumber-core-1.2.5.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-core/1.2.4/8f968da4ddb2ef34cf340be0e39736be1e7647a8/cucumber-core-1.2.4-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-core/1.2.5/c4fee6de8487b287994b917624d3ad1ede52a4ca/cucumber-core-1.2.5-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: info.cukes:cucumber-html:0.2.3">
+    <library name="Gradle: info.cukes:cucumber-html:0.2.6">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-html/0.2.3/624a0c986088e32910336dd77aee5191c04a8201/cucumber-html-0.2.3.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-html/0.2.6/e2577a2a51fdb821e877433ae55ac9211ffcb16a/cucumber-html-0.2.6.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-html/0.2.3/27705993aec49a6d4c9210158e3c570ebffa3d0a/cucumber-html-0.2.3-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-html/0.2.6/c2c2c3c6917ee2943422bea814c4762e54520408/cucumber-html-0.2.6-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: info.cukes:cucumber-java:1.2.4">
+    <library name="Gradle: info.cukes:cucumber-java8:1.2.5">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-java/1.2.4/57cca534b7abe43f6dd7624b90d3d97d33d3023d/cucumber-java-1.2.4.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-java8/1.2.5/c211c0d6a7e7f1f892e3797b311e46158746853d/cucumber-java8-1.2.5.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-java/1.2.4/bd0df1fd556d7e0834ae557a1eaa9f6f016c9d47/cucumber-java-1.2.4-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-java8/1.2.5/8d37eeaf3796d3fe1cb3b30ccb6517b56c200b72/cucumber-java8-1.2.5-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: info.cukes:cucumber-junit:1.2.4">
+    <library name="Gradle: info.cukes:cucumber-java:1.2.5">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-junit/1.2.4/8a57b68486cff4da4f10019cb9c62c597a6d2861/cucumber-junit-1.2.4.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-java/1.2.5/2197dfa9cd7899ddce136a356994ac21f438f80/cucumber-java-1.2.5.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-junit/1.2.4/737341d6983cf737aec913dfaa0656dda0b76668/cucumber-junit-1.2.4-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-java/1.2.5/fb3f585b68770a423933f0d8b9d8cac800d4157f/cucumber-java-1.2.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Gradle: info.cukes:cucumber-junit:1.2.5">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-junit/1.2.5/7cedd85f2e6b4f2fa1091c921f509275c60e7500/cucumber-junit-1.2.5.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-junit/1.2.5/5a54a1de0022cb54499ceddc17fc0d499133ddd9/cucumber-junit-1.2.5-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: info.cukes:cucumber-jvm-deps:1.0.5">
@@ -411,13 +423,13 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-jvm-deps/1.0.5/e8341c9fedbbc37a403cae642be85dcc616b09f3/cucumber-jvm-deps-1.0.5-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: info.cukes:cucumber-spring:1.2.2">
+    <library name="Gradle: info.cukes:cucumber-spring:1.2.5">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-spring/1.2.2/6d4785bf2f1f150ca2be91aeda0df0d75dcb66cf/cucumber-spring-1.2.2.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-spring/1.2.5/2b96b04759ce9719d20ea74aab59e06e6db5274b/cucumber-spring-1.2.5.jar!/" />
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-spring/1.2.2/bc0cec719fba58133969c6aa2ca35048f6e73076/cucumber-spring-1.2.2-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/info.cukes/cucumber-spring/1.2.5/39cf820f0610ef85ad33e4609248e8acc3619555/cucumber-spring-1.2.5-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Gradle: info.cukes:gherkin:2.12.2">

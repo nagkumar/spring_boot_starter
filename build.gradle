@@ -71,12 +71,14 @@ dependencies {
     testCompile("org.spockframework:spock-core:1.0-groovy-2.4")
     testCompile("org.spockframework:spock-spring:1.0-groovy-2.4")
     testRuntime("com.jayway.jsonpath:json-path")
-    testCompile("info.cukes:cucumber-spring:1.2.2")
 
-    testCompile 'info.cukes:cucumber-core:1.2.4'
-    testCompile 'info.cukes:cucumber-html:0.2.3'
-    testCompile 'info.cukes:cucumber-java:1.2.4'
-    testCompile 'info.cukes:cucumber-junit:1.2.4'
+
+    testCompile("info.cukes:cucumber-spring:1.2.5")
+    testCompile("info.cukes:cucumber-java8:1.2.5")
+    testCompile 'info.cukes:cucumber-junit:1.2.5'
+
+    testCompile 'info.cukes:cucumber-core:1.2.5'
+    testCompile 'info.cukes:cucumber-html:0.2.6'
     testCompile 'info.cukes:cucumber-jvm-deps:1.0.5'
 }
 
