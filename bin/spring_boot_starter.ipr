@@ -495,14 +495,12 @@
         <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.validation/validation-api/1.1.0.Final/7d49b53caed9bd81d172807c3e096d24f3c57090/validation-api-1.1.0.Final-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Gradle: junit:junit-dep:4.10">
+    <library name="Gradle: junit:junit-dep:4.12">
       <CLASSES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit-dep/4.10/64417b3bafdecd366afa514bd5beeae6c1f85ece/junit-dep-4.10.jar!/" />
+        <root url="file://$PROJECT_DIR$/../Could not find junit:junit-dep:4.12." />
       </CLASSES>
       <JAVADOC />
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit-dep/4.10/2c7dad0a5eb1602c6fe6b43abec8ea35805b3ae4/junit-dep-4.10-sources.jar!/" />
-      </SOURCES>
+      <SOURCES />
     </library>
     <library name="Gradle: junit:junit:4.12">
       <CLASSES>
