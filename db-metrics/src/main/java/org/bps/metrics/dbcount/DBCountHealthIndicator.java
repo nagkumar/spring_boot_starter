@@ -10,24 +10,24 @@ public class DBCountHealthIndicator implements HealthIndicator
 
     DBCountHealthIndicator(final CrudRepository aCrudRepository)
     {
-        crudRepository = aCrudRepository;
+	crudRepository = aCrudRepository;
     }
 
     @Override
     public Health health()
     {
-        try
-        {
-            long count = crudRepository.count();
-            if (count >= 0)
-            {
-                return Health.up().withDetail("count", count).build();
-            }
-            return Health.unknown().withDetail("count", count).build();
-        }
-        catch (final Exception aException)
-        {
-            return Health.down(aException).build();
-        }
+	try
+	{
+	    long count = crudRepository.count();
+	    if (count >= 0)
+	    {
+		return Health.up().withDetail("count", count).build();
+	    }
+	    return Health.unknown().withDetail("count", count).build();
+	}
+	catch (final Exception aException)
+	{
+	    return Health.down(aException).build();
+	}
     }
 }
