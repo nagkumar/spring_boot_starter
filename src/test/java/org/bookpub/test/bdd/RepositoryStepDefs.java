@@ -26,9 +26,8 @@ import static org.junit.Assert.assertNotNull;
 
 @WebAppConfiguration
 @ContextConfiguration(classes = {BookPubApplication.class, TestMockBeansConfig.class},
-	loader = SpringBootContextLoader.class)
-public class RepositoryStepDefs
-{
+        loader = SpringBootContextLoader.class)
+public class RepositoryStepDefs {
     @Autowired
     private WebApplicationContext context;
     @Qualifier("dataSource")
@@ -39,31 +38,27 @@ public class RepositoryStepDefs
     private Book loadedBook;
 
     @Given("^([^\\\"]*) fixture is loaded$")
-    public void data_fixture_is_loaded(String fixtureName) throws Throwable
-    {
-	ResourceDatabasePopulator popular = new
-		ResourceDatabasePopulator(context.getResource("classpath:/" + fixtureName + ".sql"));
-	DatabasePopulatorUtils.execute(popular, dataSource);
+    public void data_fixture_is_loaded(final String aFixtureName) throws Throwable {
+        ResourceDatabasePopulator popular = new
+                ResourceDatabasePopulator(context.getResource("classpath:/" + aFixtureName + ".sql"));
+        DatabasePopulatorUtils.execute(popular, dataSource);
     }
 
     @Given("^(\\d+) books available in the catalogue$")
-    public void books_available_in_the_catalogue(final int aBookCount) throws Throwable
-    {
-	assertEquals(aBookCount, bookRepository.count() );
+    public void books_available_in_the_catalogue(final int aBookCount) throws Throwable {
+        assertEquals(aBookCount, bookRepository.count());
     }
 
     @When("^searching for book by isbn ([\\d-]+)$")
-    public void searching_for_book_by_isbn(final String aISBN) throws Throwable
-    {
-	loadedBook = bookRepository.findBookByIsbn(aISBN);
-	assertNotNull(loadedBook);
-	assertEquals(aISBN, loadedBook.getIsbn());
+    public void searching_for_book_by_isbn(final String aISBN) throws Throwable {
+        loadedBook = bookRepository.findBookByIsbn(aISBN);
+        assertNotNull(loadedBook);
+        assertEquals(aISBN, loadedBook.getIsbn());
     }
 
     @Then("^book title will be ([^\"]*)$")
-    public void book_title_will_be(final String aBookTitle) throws Throwable
-    {
-	assertNotNull(loadedBook);
-	assertEquals(aBookTitle, loadedBook.getTitle());
+    public void book_title_will_be(final String aBookTitle) throws Throwable {
+        assertNotNull(loadedBook);
+        assertEquals(aBookTitle, loadedBook.getTitle());
     }
 }
