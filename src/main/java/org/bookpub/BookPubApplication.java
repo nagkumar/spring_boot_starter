@@ -2,7 +2,7 @@ package org.bookpub;
 
 import org.apache.commons.logging.LogFactory;
 import org.bookpub.annotations.UsedForTesting;
-import org.bps.metrics.dbcount.EnableDbCounting;
+import org.bps.metrics.dbcount.EnableDBCounting;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,7 +19,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableAutoConfiguration
 @ComponentScan(excludeFilters = @ComponentScan.Filter(UsedForTesting.class))
 @EnableScheduling
-@EnableDbCounting
+@EnableDBCounting
 public class BookPubApplication
 {
     @Bean

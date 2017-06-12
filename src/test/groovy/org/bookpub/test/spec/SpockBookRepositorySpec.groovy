@@ -29,7 +29,7 @@ import javax.sql.DataSource
 @WebAppConfiguration
 @ContextConfiguration(classes = [BookPubApplication.class, TestMockBeansConfig],
         loader = SpringBootContextLoader.class)
-class SpockBookRepositorySpecification extends Specification
+class SpockBookRepositorySpec extends Specification
 {
     @Autowired
     ConfigurableWebApplicationContext context

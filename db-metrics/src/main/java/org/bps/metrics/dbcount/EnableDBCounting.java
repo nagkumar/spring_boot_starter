@@ -6,8 +6,8 @@ import java.lang.annotation.*;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Import(DbCountAutoConfiguration.class)
+@Import(DBCountAutoConfiguration.class)
 @Documented
-public @interface EnableDbCounting
+public @interface EnableDBCounting
 {
 }

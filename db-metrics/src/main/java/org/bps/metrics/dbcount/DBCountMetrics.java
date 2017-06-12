@@ -8,11 +8,11 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.*;
 
-public class DbCountMetrics implements PublicMetrics, MetricSet
+public class DBCountMetrics implements PublicMetrics, MetricSet
 {
     private Collection<CrudRepository> crudRepositories;
 
-    DbCountMetrics(final Collection<CrudRepository> aCrudRepositories)
+    DBCountMetrics(final Collection<CrudRepository> aCrudRepositories)
     {
         crudRepositories = aCrudRepositories;
     }
@@ -23,7 +23,7 @@ public class DbCountMetrics implements PublicMetrics, MetricSet
         List<Metric<?>> metrics = new LinkedList<>();
         crudRepositories.forEach(repository ->
         {
-            String bName = DbCountRunner.getRepositoryName(repository.getClass());
+            String bName = DBCountRunner.getRepositoryName(repository.getClass());
             String bMetricName = "counter.datasource." + bName;
             metrics.add(new Metric<>(bMetricName, repository.count()));
         });

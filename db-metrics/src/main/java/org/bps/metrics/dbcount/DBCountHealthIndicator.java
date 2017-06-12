@@ -4,11 +4,11 @@ import org.springframework.boot.actuate.health.Health;
 import org.springframework.boot.actuate.health.HealthIndicator;
 import org.springframework.data.repository.CrudRepository;
 
-public class DbCountHealthIndicator implements HealthIndicator
+public class DBCountHealthIndicator implements HealthIndicator
 {
     private CrudRepository crudRepository;
 
-    DbCountHealthIndicator(final CrudRepository aCrudRepository)
+    DBCountHealthIndicator(final CrudRepository aCrudRepository)
     {
         crudRepository = aCrudRepository;
     }

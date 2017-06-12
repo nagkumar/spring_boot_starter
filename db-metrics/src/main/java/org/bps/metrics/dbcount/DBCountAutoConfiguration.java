@@ -13,21 +13,21 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.Collection;
 
 @Configuration
-public class DbCountAutoConfiguration
+public class DBCountAutoConfiguration
 {
     private final HealthAggregator healthAggregator;
 
     @Autowired
-    public DbCountAutoConfiguration(final HealthAggregator aHealthAggregator)
+    public DBCountAutoConfiguration(final HealthAggregator aHealthAggregator)
     {
         healthAggregator = aHealthAggregator;
     }
 
     @Bean
     @ConditionalOnMissingBean
-    public DbCountRunner dbCountRunner(final Collection<CrudRepository> aCrudRepositories)
+    public DBCountRunner dbCountRunner(final Collection<CrudRepository> aCrudRepositories)
     {
-        return new DbCountRunner(aCrudRepositories);
+        return new DBCountRunner(aCrudRepositories);
     }
 
     @Bean
@@ -36,17 +36,17 @@ public class DbCountAutoConfiguration
         CompositeHealthIndicator compositeHealthIndicator = new CompositeHealthIndicator(healthAggregator);
         aCrudRepositories.forEach(r ->
                 compositeHealthIndicator.addHealthIndicator(
-                        DbCountRunner.getRepositoryName(r.getClass()), new DbCountHealthIndicator(r))
+                        DBCountRunner.getRepositoryName(r.getClass()), new DBCountHealthIndicator(r))
         );
         return compositeHealthIndicator;
     }
 
     @Bean
-    public DbCountMetrics dbCountMetrics(final Collection<CrudRepository> aCrudRepositories,
+    public DBCountMetrics dbCountMetrics(final Collection<CrudRepository> aCrudRepositories,
                                          final MetricRegistry aMetricRegistry)
     {
-        DbCountMetrics dbCountMetrics = new DbCountMetrics(aCrudRepositories);
-        aMetricRegistry.registerAll(dbCountMetrics);
-        return dbCountMetrics;
+        DBCountMetrics lDBCountMetrics = new DBCountMetrics(aCrudRepositories);
+        aMetricRegistry.registerAll(lDBCountMetrics);
+        return lDBCountMetrics;
     }
 }

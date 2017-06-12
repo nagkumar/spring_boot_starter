@@ -7,12 +7,12 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.Collection;
 
-public class DbCountRunner implements CommandLineRunner
+public class DBCountRunner implements CommandLineRunner
 {
     private final Log logger = LogFactory.getLog(getClass());
     private Collection<CrudRepository> crudRepositories;
 
-    DbCountRunner(final Collection<CrudRepository> aCrudRepositories)
+    DBCountRunner(final Collection<CrudRepository> aCrudRepositories)
     {
         crudRepositories = aCrudRepositories;
     }
