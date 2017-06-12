@@ -120,4 +120,3 @@ class SpockBookRepositorySpec extends Specification
         Mockito.reset(publisherRepository)
     }
 }
-
