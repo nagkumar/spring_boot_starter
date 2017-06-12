@@ -39,7 +39,7 @@ public class StartupRunner implements CommandLineRunner
     {
 	logger.info("Welcome to Book Catalogue System!");
 	/*Author author = new Author("Alex", "Antonov");
-        author = authorRepository.save(author);
+	author = authorRepository.save(author);
         Publisher publisher = new Publisher("Packt");
         publisher = publisherRepository.save(publisher);
         Book book = new Book("972-1-78528-415-1", "Spring Boot Recipies",

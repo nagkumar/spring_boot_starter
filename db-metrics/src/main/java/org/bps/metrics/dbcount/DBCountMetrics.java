@@ -14,30 +14,30 @@ public class DBCountMetrics implements PublicMetrics, MetricSet
 
     DBCountMetrics(final Collection<CrudRepository> aCrudRepositories)
     {
-        crudRepositories = aCrudRepositories;
+	crudRepositories = aCrudRepositories;
     }
 
     @Override
     public Collection<Metric<?>> metrics()
     {
-        List<Metric<?>> metrics = new LinkedList<>();
-        crudRepositories.forEach(repository ->
-        {
-            String bName = DBCountRunner.getRepositoryName(repository.getClass());
-            String bMetricName = "counter.datasource." + bName;
-            metrics.add(new Metric<>(bMetricName, repository.count()));
-        });
-        return metrics;
+	List<Metric<?>> metrics = new LinkedList<>();
+	crudRepositories.forEach(repository ->
+				 {
+				     String bName = DBCountRunner.getRepositoryName(repository.getClass());
+				     String bMetricName = "counter.datasource." + bName;
+				     metrics.add(new Metric<>(bMetricName, repository.count()));
+				 });
+	return metrics;
     }
 
     @Override
     public Map<String, com.codahale.metrics.Metric> getMetrics()
     {
-        final Map<String, com.codahale.metrics.Metric> gauges = new HashMap<>();
-        metrics().forEach(metric ->
-        {
-            gauges.put(metric.getName(), (Gauge<Number>) metric::getValue);
-        });
-        return gauges;
+	final Map<String, com.codahale.metrics.Metric> gauges = new HashMap<>();
+	metrics().forEach(metric ->
+			  {
+			      gauges.put(metric.getName(), (Gauge<Number>) metric::getValue);
+			  });
+	return gauges;
     }
 }

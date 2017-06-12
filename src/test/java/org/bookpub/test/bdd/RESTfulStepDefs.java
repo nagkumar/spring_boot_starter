@@ -31,10 +31,13 @@ import static org.junit.Assert.assertTrue;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 @WebAppConfiguration
-@ContextConfiguration(classes = {BookPubApplication.class,
-        TestMockBeansConfig.class}, loader =
-        SpringBootContextLoader.class)
-public class RESTfulStepDefs {
+@ContextConfiguration(classes = {
+	BookPubApplication.class,
+	TestMockBeansConfig.class
+}, loader =
+	SpringBootContextLoader.class)
+public class RESTfulStepDefs
+{
     @Autowired
     private WebApplicationContext context;
     @Autowired
@@ -43,27 +46,32 @@ public class RESTfulStepDefs {
     private ResultActions result;
 
     @Before
-    public void setup() throws IOException {
-        mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
+    public void setup() throws IOException
+    {
+	mockMvc = MockMvcBuilders.webAppContextSetup(context).build();
     }
 
     @Given("^catalogue with books$")
-    public void catalogue_with_books() {
-        assertTrue(bookRepository.count() > 0);
+    public void catalogue_with_books()
+    {
+	assertTrue(bookRepository.count() > 0);
     }
 
     @When("^requesting url ([^\"]*)$")
-    public void requesting_url(String url) throws Exception {
-        result = mockMvc.perform(get(url));
+    public void requesting_url(String url) throws Exception
+    {
+	result = mockMvc.perform(get(url));
     }
 
     @Then("^status code will be ([\\d]*)$")
-    public void status_code_will_be(int code) throws Throwable {
-        result.andExpect(status().is(code));
+    public void status_code_will_be(int code) throws Throwable
+    {
+	result.andExpect(status().is(code));
     }
 
     @Then("^response content contains ([^\"]*)$")
-    public void response_content_contains(String aContent) throws Throwable {
-        result.andExpect(content().string(containsString(aContent)));
+    public void response_content_contains(String aContent) throws Throwable
+    {
+	result.andExpect(content().string(containsString(aContent)));
     }
 }
