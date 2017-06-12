@@ -24,7 +24,7 @@ import static org.junit.Assert.assertNotNull;
  * Created by reddaiah on 6/12/2017.
  */
 @WebAppConfiguration
-@ContextConfiguration(classes ={BookPubApplication.class, TestMockBeansConfig.class},
+@ContextConfiguration(classes = {BookPubApplication.class, TestMockBeansConfig.class},
         loader = SpringBootContextLoader.class)
 public class RepositoryStepdefs {
     @Autowired
@@ -34,6 +34,7 @@ public class RepositoryStepdefs {
     @Autowired
     private BookRepository bookRepository;
     private Book loadedBook;
+
     @Given("^([^\\\"]*) fixture is loaded$")
     public void data_fixture_is_loaded(String fixtureName) throws
             Throwable {
@@ -42,11 +43,13 @@ public class RepositoryStepdefs {
                 fixtureName + ".sql"));
         DatabasePopulatorUtils.execute(populator, ds);
     }
+
     @Given("^(\\d+) books available in the catalogue$")
     public void books_available_in_the_catalogue(int bookCount) throws
             Throwable {
         assertEquals(bookCount, bookRepository.count());
     }
+
     @When("^searching for book by isbn ([\\d-]+)$")
     public void searching_for_book_by_isbn(String isbn) throws
             Throwable {
@@ -54,6 +57,7 @@ public class RepositoryStepdefs {
         assertNotNull(loadedBook);
         assertEquals(isbn, loadedBook.getIsbn());
     }
+
     @Then("^book title will be ([^\"]*)$")
     public void book_title_will_be(String bookTitle) throws Throwable {
         assertNotNull(loadedBook);
