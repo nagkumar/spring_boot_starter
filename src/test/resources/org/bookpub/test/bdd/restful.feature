@@ -13,3 +13,4 @@ Feature: Finding a book via REST API
 	    | isbn              | title                |
 	    | 978-1-78398-478-7 | Orchestrating Docker |
 	    | 978-1-78528-415-1 | Spring Boot Recipes  |
+

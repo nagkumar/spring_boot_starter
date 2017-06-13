@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bca2244-16a6-4a6a-aa55-f7dc83458266" name="Default" comment="" />
+    <list default="true" id="1bca2244-16a6-4a6a-aa55-f7dc83458266" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring_boot_starter.iws" afterPath="$PROJECT_DIR$/spring_boot_starter.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/test/java/org/bookpub/test/unit/BookPubApplicationTests.java" afterPath="$PROJECT_DIR$/../src/test/java/org/bookpub/test/unit/BookPubApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/repositories.feature" afterPath="$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/repositories.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/restful.feature" afterPath="$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/restful.feature" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../src/test/resources/packt-books.sql" afterPath="$PROJECT_DIR$/../src/test/resources/packt-books.sql" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../db-metrics/.gradle/" />
     <ignored path="$PROJECT_DIR$/../db-metrics/build/" />
@@ -59,28 +65,7 @@
     <favorites_list name="spring_boot_starter" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RESTfulStepDefs.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../src/test/java/org/bookpub/test/bdd/RESTfulStepDefs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
-              <caret line="71" column="49" lean-forward="true" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restful.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/restful.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -117,10 +102,11 @@
       <find>books_available_in_the_catalogue</find>
       <find>step</find>
       <find>978-1-78398-478-7</find>
+      <find>Spring Boot Recipes</find>
     </findStrings>
     <dirStrings>
-      <dir>C:\temp\abc\spring_boot_starter</dir>
       <dir>C:\temp\abc\spring_boot_starter\src</dir>
+      <dir>C:\temp\abc\spring_boot_starter</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -865,20 +851,21 @@
         <option value="$PROJECT_DIR$/../src/main/java/org/bookpub/WebConfiguration.java" />
         <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/4.3.8.RELEASE/37e3896fb1d3fa08235224b1a7528f806de717cc/spring-test-4.3.8.RELEASE.jar!/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.class" />
         <option value="$PROJECT_DIR$/../src/main/resources/import.sql" />
-        <option value="$PROJECT_DIR$/../src/test/java/org/bookpub/test/unit/BookPubApplicationTests.java" />
-        <option value="$PROJECT_DIR$/../src/test/resources/test-data.sql" />
         <option value="$PROJECT_DIR$/../src/test/java/org/bookpub/test/bdd/RunCukeTests.java" />
         <option value="$PROJECT_DIR$/../src/test/java/org/bookpub/test/bdd/RepositoryStepdefs.java" />
         <option value="$PROJECT_DIR$/../build.gradle" />
         <option value="$PROJECT_DIR$/../src/main/java/org/bookpub/StartupRunner.java" />
         <option value="$PROJECT_DIR$/../src/test/java/org/bookpub/test/bdd/RepositoryStepDefs.java" />
-        <option value="$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/repositories.feature" />
-        <option value="$PROJECT_DIR$/../src/test/resources/packt-books.sql" />
         <option value="$PROJECT_DIR$/../db-metrics/src/main/java/org/bps/metrics/dbcount/DBCountAutoConfiguration.java" />
         <option value="$PROJECT_DIR$/../src/main/java/org/bookpub/entity/Publisher.java" />
         <option value="$PROJECT_DIR$/../src/test/groovy/org/bookpub/test/spec/SpockBookRepositorySpec.groovy" />
         <option value="$PROJECT_DIR$/../src/test/java/org/bookpub/test/bdd/RESTfulStepDefs.java" />
         <option value="$PROJECT_DIR$/../src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/../src/test/java/org/bookpub/test/unit/BookPubApplicationTests.java" />
+        <option value="$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/repositories.feature" />
+        <option value="$PROJECT_DIR$/../src/test/resources/test-data.sql" />
+        <option value="$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/restful.feature" />
+        <option value="$PROJECT_DIR$/../src/test/resources/packt-books.sql" />
       </list>
     </option>
   </component>
@@ -1035,6 +1022,10 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1085,6 +1076,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring_boot_starter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring_boot_starter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookpub" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1638,7 +1663,7 @@
       <workItem from="1497252215695" duration="808000" />
       <workItem from="1497253035989" duration="57000" />
       <workItem from="1497268478976" duration="779000" />
-      <workItem from="1497269632111" duration="97000" />
+      <workItem from="1497269632111" duration="1225000" />
     </task>
     <task id="LOCAL-00001" summary="e">
       <created>1494598152230</created>
@@ -1682,7 +1707,14 @@
       <option name="project" value="LOCAL" />
       <updated>1497251351316</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge branch 'master' of https://github.com/nagkumar/spring_boot_starter&#10;&#10;# Conflicts:&#10;#&#9;bin/spring_boot_starter.iws">
+      <created>1497270843461</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1497270843461</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1694,11 +1726,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22305000" />
+    <option name="totallyTimeSpent" value="23433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1066" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1720,8 +1751,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37375966" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27950644" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27950644" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.508269" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -1731,7 +1763,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1756,7 +1787,8 @@
     </ignored-roots>
     <MESSAGE value="e" />
     <MESSAGE value="fixed cucumber tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed cucumber tests" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/nagkumar/spring_boot_starter&#10;&#10;# Conflicts:&#10;#&#9;bin/spring_boot_starter.iws" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/nagkumar/spring_boot_starter&#10;&#10;# Conflicts:&#10;#&#9;bin/spring_boot_starter.iws" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1943,21 +1975,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../src/test/resources/test-data.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="78" lean-forward="false" selection-start-line="1" selection-start-column="78" selection-end-line="1" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../src/main/java/org/bookpub/BookPubApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../src/test/java/org/bookpub/test/unit/TestMockBeansConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1994,13 +2011,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../src/test/java/org/bookpub/test/unit/BookPubApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../src/main/resources/import.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -2015,21 +2025,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../src/test/resources/packt-books.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="57" lean-forward="true" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../src/test/java/org/bookpub/test/bdd/RepositoryStepDefs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../db-metrics/src/main/java/org/bps/metrics/dbcount/DBCountAutoConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -2041,13 +2036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
           <caret line="47" column="43" lean-forward="true" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/repositories.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -2098,21 +2086,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
           <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/java/org/bookpub/test/bdd/RepositoryStepDefs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/main/java/org/bookpub/BookPubApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/java/org/bookpub/test/unit/BookPubApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="70" column="9" lean-forward="true" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/resources/test-data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="73" lean-forward="false" selection-start-line="1" selection-start-column="73" selection-end-line="1" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/resources/packt-books.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/restful.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../src/test/java/org/bookpub/test/bdd/RESTfulStepDefs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="71" column="49" lean-forward="true" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
+        <state relative-caret-position="411">
+          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../src/test/resources/org/bookpub/test/bdd/repositories.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
           <folding />
         </state>
       </provider>

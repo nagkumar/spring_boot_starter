@@ -40,7 +40,7 @@ public class BookPubApplicationTests
     private BookRepository bookRepository;
 
     @Autowired
-    //Qualifier("dataSource")
+    @Qualifier("dataSource")
     private DataSource dataSource;
 
     @Value("${local.server.port}")
