@@ -16,30 +16,30 @@ import java.util.concurrent.TimeUnit;
 public class MonitoringConfiguration
 {
     @Bean
-    public Graphite graphite(@Value("${graphite.host}") String graphiteHost,
-			     @Value("${graphite.port}") int graphitePort)
+    public Graphite graphite(@Value("${graphite.host}") final String aGraphiteHost,
+			     @Value("${graphite.port}") final int aGraphitePort)
     {
-	return new Graphite(new InetSocketAddress(graphiteHost, graphitePort));
+	return new Graphite(new InetSocketAddress(aGraphiteHost, aGraphitePort));
     }
 
     @Bean
-    public GraphiteReporter graphiteReporter(Graphite graphite, MetricRegistry registry)
+    public GraphiteReporter graphiteReporter(final Graphite aGraphite, final MetricRegistry aMetricRegistry)
     {
-	GraphiteReporter reporter = GraphiteReporter.forRegistry(registry)
+	GraphiteReporter reporter = GraphiteReporter.forRegistry(aMetricRegistry)
 		.prefixedWith("bookpub.app")
 		.convertRatesTo(TimeUnit.SECONDS)
 		.convertDurationsTo(TimeUnit.MILLISECONDS)
 		.filter(MetricFilter.ALL)
-		.build(graphite);
+		.build(aGraphite);
 	reporter.start(1, TimeUnit.MILLISECONDS);
 	return reporter;
     }
 
     @Bean
-    public ThreadStatesGaugeSet threadStatesGaugeSet(MetricRegistry registry)
+    public ThreadStatesGaugeSet threadStatesGaugeSet(final MetricRegistry aMetricRegistry)
     {
 	ThreadStatesGaugeSet threadStatesGaugeSet = new ThreadStatesGaugeSet();
-	registry.register("threads", threadStatesGaugeSet);
+	aMetricRegistry.register("threads", threadStatesGaugeSet);
 	return threadStatesGaugeSet;
     }
 }
