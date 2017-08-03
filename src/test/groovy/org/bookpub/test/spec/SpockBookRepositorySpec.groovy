@@ -27,96 +27,95 @@ import spock.lang.Specification
 import javax.sql.DataSource
 
 @WebAppConfiguration
-@ContextConfiguration(classes = [BookPubApplication.class, TestMockBeansConfig],
-        loader = SpringBootContextLoader.class)
+@ContextConfiguration(classes = [BookPubApplication.class, TestMockBeansConfig], loader = SpringBootContextLoader.class)
 class SpockBookRepositorySpec extends Specification
 {
-    @Autowired
-    ConfigurableWebApplicationContext context
+  @Autowired
+  ConfigurableWebApplicationContext context
 
-    @Shared
-    boolean sharedSetupDone = false
+  @Shared
+  boolean sharedSetupDone = false
 
-    @Autowired
-    private DataSource dataSource
+  @Autowired
+  private DataSource dataSource
 
-    @Autowired
-    private BookRepository bookRepository
+  @Autowired
+  private BookRepository bookRepository
 
-    @Shared
-    private MockMvc mockMvc
+  @Shared
+  private MockMvc mockMvc
 
-    void setup()
+  void setup()
+  {
+    if (!sharedSetupDone)
     {
-        if (!sharedSetupDone)
-        {
-            sharedSetupDone = mockMvc = MockMvcBuilders.webAppContextSetup(context).build()
-        }
-        ResourceDatabasePopulator populator = new ResourceDatabasePopulator(context.getResource("classpath:/test-data.sql"))
-        DatabasePopulatorUtils.execute(populator, dataSource)
+      sharedSetupDone = mockMvc = MockMvcBuilders.webAppContextSetup(context).build()
+    }
+    ResourceDatabasePopulator popular = new ResourceDatabasePopulator(context.getResource("classpath:/test-data.sql"))
+    DatabasePopulatorUtils.execute(popular, dataSource)
+  }
+
+  @Transactional
+  def "Test RESTful GET"()
+  {
+    when:
+    def result = mockMvc.perform(MockMvcRequestBuilders.get("/books/${isbn}"))
+
+    then:
+    result.with {
+      andExpect(MockMvcResultMatchers.status().isOk())
+      andExpect(MockMvcResultMatchers.content().string(CoreMatchers.containsString(title)))
     }
 
-    @Transactional
-    def "Test RESTful GET"()
-    {
-        when:
-        def result = mockMvc.perform(MockMvcRequestBuilders.get("/books/${isbn}"))
+    where:
+    isbn                | title
+    "978-1-78439-302-1" | "Learning Spring Boot"
+    "972-1-78528-415-1" | "Spring Boot Recipes"
+  }
 
-        then:
-        result.with {
-            andExpect(MockMvcResultMatchers.status().isOk())
-            andExpect(MockMvcResultMatchers.content().string(CoreMatchers.containsString(title)))
-        }
+  @Transactional
+  def "Insert another book"()
+  {
+    setup:
+    def existingBook = bookRepository.findBookByIsbn("972-1-78528-415-1")
+    def newBook = new Book("978-1-78528-415-1", "Some Future Book",
+                           existingBook.getAuthor(), existingBook.getPublisher())
 
-        where:
-        isbn                | title
-        "978-1-78439-302-1" | "Learning Spring Boot"
-        "972-1-78528-415-1" | "Spring Boot Recipes"
+    expect:
+    bookRepository.count() == 2
+
+    when:
+    def savedBook = bookRepository.save(newBook)
+
+    then:
+    bookRepository.count() == 3
+    savedBook.id > -1
+  }
+
+  @Autowired
+  private PublisherRepository publisherRepository
+
+  def "Test RESTful GET books by publisher"()
+  {
+    setup:
+    Publisher publisher = new Publisher("Strange Books")
+    publisher.setId(999)
+    Book book = new Book("978-1-98765-432-1", "Mystery Book",
+                         new Author("John", "Doe"), publisher)
+    publisher.setBooks([book])
+    Mockito.when(publisherRepository.count()).thenReturn(1L)
+    Mockito.when(publisherRepository.findOne(1L)).thenReturn(publisher)
+
+    when:
+    def result = mockMvc.perform(MockMvcRequestBuilders.get("/books/publisher/1"))
+
+    then:
+    result.with {
+      andExpect(MockMvcResultMatchers.status().isOk())
+      andExpect(MockMvcResultMatchers.content().string(CoreMatchers.containsString("Strange Books")))
     }
 
-    @Transactional
-    def "Insert another book"()
-    {
-        setup:
-        def existingBook = bookRepository.findBookByIsbn("972-1-78528-415-1")
-        def newBook = new Book("978-1-78528-415-1", "Some Future Book",
-                               existingBook.getAuthor(), existingBook.getPublisher())
-
-        expect:
-        bookRepository.count() == 2
-
-        when:
-        def savedBook = bookRepository.save(newBook)
-
-        then:
-        bookRepository.count() == 3
-        savedBook.id > -1
-    }
-
-    @Autowired
-    private PublisherRepository publisherRepository
-
-    def "Test RESTful GET books by publisher"()
-    {
-        setup:
-        Publisher publisher = new Publisher("Strange Books")
-        publisher.setId(999)
-        Book book = new Book("978-1-98765-432-1", "Mystery Book",
-                             new Author("John", "Doe"), publisher)
-        publisher.setBooks([book])
-        Mockito.when(publisherRepository.count()).thenReturn(1L)
-        Mockito.when(publisherRepository.findOne(1L)).thenReturn(publisher)
-
-        when:
-        def result = mockMvc.perform(MockMvcRequestBuilders.get("/books/publisher/1"))
-
-        then:
-        result.with {
-            andExpect(MockMvcResultMatchers.status().isOk())
-            andExpect(MockMvcResultMatchers.content().string(CoreMatchers.containsString("Strange Books")))
-        }
-
-        cleanup:
-        Mockito.reset(publisherRepository)
-    }
+    cleanup:
+    Mockito.reset(publisherRepository)
+  }
 }

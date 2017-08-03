@@ -71,7 +71,6 @@ dependencies {
     testCompile("org.spockframework:spock-spring:1.0-groovy-2.4")
     testRuntime("com.jayway.jsonpath:json-path")
 
-
     testCompile("info.cukes:cucumber-spring:1.2.5")
     testCompile("info.cukes:cucumber-java8:1.2.5")
     testCompile 'info.cukes:cucumber-junit:1.2.5'
@@ -89,18 +88,15 @@ distDocker {
     //addFile "${System.properties["user.home"]}/.keystore", "/root/"
 }
 
-bootRun {
-    addResources = false
-}
-
-processResources {
-    filesMatching("**/application.properties") {
-        expand(project.properties)
-    }
-}
-
 task wrapper(type: Wrapper) {
     gradleVersion = "3.5"
 }
 
-defaultTasks 'clean', 'test'
+task showReportWin(type: Exec) {
+  workingDir './build/reports/tests/test'
+  commandLine 'cmd', '/c', 'start index.html'
+  dependsOn 'test'
+  mustRunAfter 'test'
+}
+
+defaultTasks 'clean', 'test', 'showReportWin'
